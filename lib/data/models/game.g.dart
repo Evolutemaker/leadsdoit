@@ -23,8 +23,8 @@ _$_Events _$$_EventsFromJson(Map<String, dynamic> json) => _$_Events(
       strStatus: json['strStatus'] as String?,
       strHomeTeam: json['strHomeTeam'] as String,
       strAwayTeam: json['strAwayTeam'] as String,
-      intHomeScore: json['intHomeScore'] as int?,
-      intAwayScore: json['intAwayScore'] as int?,
+      intHomeScore: json['intHomeScore'] as String?,
+      intAwayScore: json['intAwayScore'] as String?,
     );
 
 Map<String, dynamic> _$$_EventsToJson(_$_Events instance) => <String, dynamic>{

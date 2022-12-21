@@ -21,8 +21,8 @@ class Events with _$Events {
     required String? strStatus,
     required String strHomeTeam,
     required String strAwayTeam,
-    required int? intHomeScore,
-    required int? intAwayScore,
+    required String? intHomeScore,
+    required String? intAwayScore,
    }) = _Events;
 
    factory Events.fromJson(Map<String, dynamic> json) => _$EventsFromJson(json);

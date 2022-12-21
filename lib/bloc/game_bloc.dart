@@ -16,10 +16,16 @@ class GameBloc extends Bloc<GameEvent, GameState> {
       emit(const GameState.loading());
 
       try {
-        Game _gameLoaded = await gameRepo.getGame();
-        emit(GameState.loaded(gameLoaded: _gameLoaded));
+        bool _isLoaded = await gameRepo.preloadLink();
+        if (_isLoaded){
+          Game _gameLoaded = await gameRepo.getGame();
+          emit(GameState.loaded(gameLoaded: _gameLoaded));
+        } else {
+          emit(const GameState.webview());
+        }
+        
       } catch(_) {
-        emit(GameState.error());
+        emit(const GameState.error());
       }
     });
   }

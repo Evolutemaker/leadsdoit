@@ -225,6 +225,7 @@ mixin _$GameState {
     required TResult Function() loading,
     required TResult Function(Game gameLoaded) loaded,
     required TResult Function() error,
+    required TResult Function() webview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -232,6 +233,7 @@ mixin _$GameState {
     TResult? Function()? loading,
     TResult? Function(Game gameLoaded)? loaded,
     TResult? Function()? error,
+    TResult? Function()? webview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -239,6 +241,7 @@ mixin _$GameState {
     TResult Function()? loading,
     TResult Function(Game gameLoaded)? loaded,
     TResult Function()? error,
+    TResult Function()? webview,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -247,6 +250,7 @@ mixin _$GameState {
     required TResult Function(GameStateLoading value) loading,
     required TResult Function(GameStateLoaded value) loaded,
     required TResult Function(GameStateError value) error,
+    required TResult Function(GameStateWebview value) webview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -254,6 +258,7 @@ mixin _$GameState {
     TResult? Function(GameStateLoading value)? loading,
     TResult? Function(GameStateLoaded value)? loaded,
     TResult? Function(GameStateError value)? error,
+    TResult? Function(GameStateWebview value)? webview,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -261,6 +266,7 @@ mixin _$GameState {
     TResult Function(GameStateLoading value)? loading,
     TResult Function(GameStateLoaded value)? loaded,
     TResult Function(GameStateError value)? error,
+    TResult Function(GameStateWebview value)? webview,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -324,6 +330,7 @@ class _$GameStateLoading implements GameStateLoading {
     required TResult Function() loading,
     required TResult Function(Game gameLoaded) loaded,
     required TResult Function() error,
+    required TResult Function() webview,
   }) {
     return loading();
   }
@@ -334,6 +341,7 @@ class _$GameStateLoading implements GameStateLoading {
     TResult? Function()? loading,
     TResult? Function(Game gameLoaded)? loaded,
     TResult? Function()? error,
+    TResult? Function()? webview,
   }) {
     return loading?.call();
   }
@@ -344,6 +352,7 @@ class _$GameStateLoading implements GameStateLoading {
     TResult Function()? loading,
     TResult Function(Game gameLoaded)? loaded,
     TResult Function()? error,
+    TResult Function()? webview,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -358,6 +367,7 @@ class _$GameStateLoading implements GameStateLoading {
     required TResult Function(GameStateLoading value) loading,
     required TResult Function(GameStateLoaded value) loaded,
     required TResult Function(GameStateError value) error,
+    required TResult Function(GameStateWebview value) webview,
   }) {
     return loading(this);
   }
@@ -368,6 +378,7 @@ class _$GameStateLoading implements GameStateLoading {
     TResult? Function(GameStateLoading value)? loading,
     TResult? Function(GameStateLoaded value)? loaded,
     TResult? Function(GameStateError value)? error,
+    TResult? Function(GameStateWebview value)? webview,
   }) {
     return loading?.call(this);
   }
@@ -378,6 +389,7 @@ class _$GameStateLoading implements GameStateLoading {
     TResult Function(GameStateLoading value)? loading,
     TResult Function(GameStateLoaded value)? loaded,
     TResult Function(GameStateError value)? error,
+    TResult Function(GameStateWebview value)? webview,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -469,6 +481,7 @@ class _$GameStateLoaded implements GameStateLoaded {
     required TResult Function() loading,
     required TResult Function(Game gameLoaded) loaded,
     required TResult Function() error,
+    required TResult Function() webview,
   }) {
     return loaded(gameLoaded);
   }
@@ -479,6 +492,7 @@ class _$GameStateLoaded implements GameStateLoaded {
     TResult? Function()? loading,
     TResult? Function(Game gameLoaded)? loaded,
     TResult? Function()? error,
+    TResult? Function()? webview,
   }) {
     return loaded?.call(gameLoaded);
   }
@@ -489,6 +503,7 @@ class _$GameStateLoaded implements GameStateLoaded {
     TResult Function()? loading,
     TResult Function(Game gameLoaded)? loaded,
     TResult Function()? error,
+    TResult Function()? webview,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -503,6 +518,7 @@ class _$GameStateLoaded implements GameStateLoaded {
     required TResult Function(GameStateLoading value) loading,
     required TResult Function(GameStateLoaded value) loaded,
     required TResult Function(GameStateError value) error,
+    required TResult Function(GameStateWebview value) webview,
   }) {
     return loaded(this);
   }
@@ -513,6 +529,7 @@ class _$GameStateLoaded implements GameStateLoaded {
     TResult? Function(GameStateLoading value)? loading,
     TResult? Function(GameStateLoaded value)? loaded,
     TResult? Function(GameStateError value)? error,
+    TResult? Function(GameStateWebview value)? webview,
   }) {
     return loaded?.call(this);
   }
@@ -523,6 +540,7 @@ class _$GameStateLoaded implements GameStateLoaded {
     TResult Function(GameStateLoading value)? loading,
     TResult Function(GameStateLoaded value)? loaded,
     TResult Function(GameStateError value)? error,
+    TResult Function(GameStateWebview value)? webview,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -583,6 +601,7 @@ class _$GameStateError implements GameStateError {
     required TResult Function() loading,
     required TResult Function(Game gameLoaded) loaded,
     required TResult Function() error,
+    required TResult Function() webview,
   }) {
     return error();
   }
@@ -593,6 +612,7 @@ class _$GameStateError implements GameStateError {
     TResult? Function()? loading,
     TResult? Function(Game gameLoaded)? loaded,
     TResult? Function()? error,
+    TResult? Function()? webview,
   }) {
     return error?.call();
   }
@@ -603,6 +623,7 @@ class _$GameStateError implements GameStateError {
     TResult Function()? loading,
     TResult Function(Game gameLoaded)? loaded,
     TResult Function()? error,
+    TResult Function()? webview,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -617,6 +638,7 @@ class _$GameStateError implements GameStateError {
     required TResult Function(GameStateLoading value) loading,
     required TResult Function(GameStateLoaded value) loaded,
     required TResult Function(GameStateError value) error,
+    required TResult Function(GameStateWebview value) webview,
   }) {
     return error(this);
   }
@@ -627,6 +649,7 @@ class _$GameStateError implements GameStateError {
     TResult? Function(GameStateLoading value)? loading,
     TResult? Function(GameStateLoaded value)? loaded,
     TResult? Function(GameStateError value)? error,
+    TResult? Function(GameStateWebview value)? webview,
   }) {
     return error?.call(this);
   }
@@ -637,6 +660,7 @@ class _$GameStateError implements GameStateError {
     TResult Function(GameStateLoading value)? loading,
     TResult Function(GameStateLoaded value)? loaded,
     TResult Function(GameStateError value)? error,
+    TResult Function(GameStateWebview value)? webview,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -648,4 +672,118 @@ class _$GameStateError implements GameStateError {
 
 abstract class GameStateError implements GameState {
   const factory GameStateError() = _$GameStateError;
+}
+
+/// @nodoc
+abstract class _$$GameStateWebviewCopyWith<$Res> {
+  factory _$$GameStateWebviewCopyWith(
+          _$GameStateWebview value, $Res Function(_$GameStateWebview) then) =
+      __$$GameStateWebviewCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GameStateWebviewCopyWithImpl<$Res>
+    extends _$GameStateCopyWithImpl<$Res, _$GameStateWebview>
+    implements _$$GameStateWebviewCopyWith<$Res> {
+  __$$GameStateWebviewCopyWithImpl(
+      _$GameStateWebview _value, $Res Function(_$GameStateWebview) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GameStateWebview implements GameStateWebview {
+  const _$GameStateWebview();
+
+  @override
+  String toString() {
+    return 'GameState.webview()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GameStateWebview);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() loading,
+    required TResult Function(Game gameLoaded) loaded,
+    required TResult Function() error,
+    required TResult Function() webview,
+  }) {
+    return webview();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? loading,
+    TResult? Function(Game gameLoaded)? loaded,
+    TResult? Function()? error,
+    TResult? Function()? webview,
+  }) {
+    return webview?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? loading,
+    TResult Function(Game gameLoaded)? loaded,
+    TResult Function()? error,
+    TResult Function()? webview,
+    required TResult orElse(),
+  }) {
+    if (webview != null) {
+      return webview();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(GameStateLoading value) loading,
+    required TResult Function(GameStateLoaded value) loaded,
+    required TResult Function(GameStateError value) error,
+    required TResult Function(GameStateWebview value) webview,
+  }) {
+    return webview(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(GameStateLoading value)? loading,
+    TResult? Function(GameStateLoaded value)? loaded,
+    TResult? Function(GameStateError value)? error,
+    TResult? Function(GameStateWebview value)? webview,
+  }) {
+    return webview?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(GameStateLoading value)? loading,
+    TResult Function(GameStateLoaded value)? loaded,
+    TResult Function(GameStateError value)? error,
+    TResult Function(GameStateWebview value)? webview,
+    required TResult orElse(),
+  }) {
+    if (webview != null) {
+      return webview(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class GameStateWebview implements GameState {
+  const factory GameStateWebview() = _$GameStateWebview;
 }

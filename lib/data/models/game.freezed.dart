@@ -159,8 +159,8 @@ mixin _$Events {
   String? get strStatus => throw _privateConstructorUsedError;
   String get strHomeTeam => throw _privateConstructorUsedError;
   String get strAwayTeam => throw _privateConstructorUsedError;
-  int? get intHomeScore => throw _privateConstructorUsedError;
-  int? get intAwayScore => throw _privateConstructorUsedError;
+  String? get intHomeScore => throw _privateConstructorUsedError;
+  String? get intAwayScore => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -179,8 +179,8 @@ abstract class $EventsCopyWith<$Res> {
       String? strStatus,
       String strHomeTeam,
       String strAwayTeam,
-      int? intHomeScore,
-      int? intAwayScore});
+      String? intHomeScore,
+      String? intAwayScore});
 }
 
 /// @nodoc
@@ -233,11 +233,11 @@ class _$EventsCopyWithImpl<$Res, $Val extends Events>
       intHomeScore: freezed == intHomeScore
           ? _value.intHomeScore
           : intHomeScore // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       intAwayScore: freezed == intAwayScore
           ? _value.intAwayScore
           : intAwayScore // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
     ) as $Val);
   }
 }
@@ -255,8 +255,8 @@ abstract class _$$_EventsCopyWith<$Res> implements $EventsCopyWith<$Res> {
       String? strStatus,
       String strHomeTeam,
       String strAwayTeam,
-      int? intHomeScore,
-      int? intAwayScore});
+      String? intHomeScore,
+      String? intAwayScore});
 }
 
 /// @nodoc
@@ -306,11 +306,11 @@ class __$$_EventsCopyWithImpl<$Res>
       intHomeScore: freezed == intHomeScore
           ? _value.intHomeScore
           : intHomeScore // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
       intAwayScore: freezed == intAwayScore
           ? _value.intAwayScore
           : intAwayScore // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as String?,
     ));
   }
 }
@@ -344,9 +344,9 @@ class _$_Events implements _Events {
   @override
   final String strAwayTeam;
   @override
-  final int? intHomeScore;
+  final String? intHomeScore;
   @override
-  final int? intAwayScore;
+  final String? intAwayScore;
 
   @override
   String toString() {
@@ -402,8 +402,8 @@ abstract class _Events implements Events {
       required final String? strStatus,
       required final String strHomeTeam,
       required final String strAwayTeam,
-      required final int? intHomeScore,
-      required final int? intAwayScore}) = _$_Events;
+      required final String? intHomeScore,
+      required final String? intAwayScore}) = _$_Events;
 
   factory _Events.fromJson(Map<String, dynamic> json) = _$_Events.fromJson;
 
@@ -420,9 +420,9 @@ abstract class _Events implements Events {
   @override
   String get strAwayTeam;
   @override
-  int? get intHomeScore;
+  String? get intHomeScore;
   @override
-  int? get intAwayScore;
+  String? get intAwayScore;
   @override
   @JsonKey(ignore: true)
   _$$_EventsCopyWith<_$_Events> get copyWith =>
